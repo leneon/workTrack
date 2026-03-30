@@ -1,0 +1,45 @@
+# ========================
+# GLOBAL
+# ========================
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db
+
+# ========================
+# REACT NATIVE (worktrack-mobile)
+# ========================
+worktrack-mobile/node_modules/
+worktrack-mobile/.expo/
+worktrack-mobile/.expo-shared/
+worktrack-mobile/android/.gradle/
+worktrack-mobile/android/app/build/
+worktrack-mobile/ios/Pods/
+worktrack-mobile/ios/build/
+worktrack-mobile/.idea/
+worktrack-mobile/*.keystore
+
+# ========================
+# FASTAPI / PYTHON (worktrack-api)
+# ========================
+worktrack-api/__pycache__/
+worktrack-api/*.pyc
+worktrack-api/*.pyo
+worktrack-api/*.pyd
+
+# Virtual env
+worktrack-api/venv/
+worktrack-api/env/
+worktrack-api/.venv/
+
+# Python build
+worktrack-api/build/
+worktrack-api/dist/
+worktrack-api/*.egg-info/
+
+# ========================
+# IDE
+# ========================
+.vscode/
+.idea/

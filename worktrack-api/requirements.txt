@@ -1,0 +1,31 @@
+# ============================================================
+# WorkTrack API - Dépendances Python
+# ============================================================
+
+# ─── FastAPI & Serveur ────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+python-multipart==0.0.9       # upload de fichiers
+
+# ─── Base de données (PostgreSQL async) ───────────────────
+sqlalchemy[asyncio]==2.0.30
+asyncpg==0.29.0               # driver PostgreSQL async
+alembic==1.13.1               # migrations
+
+# ─── Validation & Configuration ───────────────────────────
+pydantic[email]==2.7.1
+pydantic-settings==2.2.1
+
+# ─── Authentification JWT ─────────────────────────────────
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+
+# ─── S3 / MinIO ───────────────────────────────────────────
+boto3==1.34.96
+botocore==1.34.96
+
+# ─── Notifications Push (FCM) ─────────────────────────────
+httpx==0.27.0                 # client HTTP async
+
+# ─── Utilitaires ──────────────────────────────────────────
+python-dotenv==1.0.1
